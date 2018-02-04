@@ -1,0 +1,127 @@
+<div id="home">
+  <div class="topbar">
+    <div class="anashleft">Wimo</div>
+    <div class="anashright" v-bind:class="{'menujaaktive': aoshtaktive === true}">
+      <span class="letdown">
+      	<span>HOME</span>
+      <span><feather-icon type="chevron-down"></feather-icon></span>
+      </span>
+      <span class="notletdown">ABOUT</span>
+      <span class="letdown">
+      	<span>PORTFOLIO</span>
+      <span><feather-icon type="chevron-down"></feather-icon></span>
+      </span>
+      <span class="letdown">
+      	<span>BLOG</span>
+      <span><feather-icon type="chevron-down"></feather-icon></span>
+      </span>
+      <span class="notletdown">CONTACT</span>
+    </div>
+    <div class="hamburgermenu" v-if="menu" @click="showmenu()"> <feather-icon type="menu"></feather-icon></div>
+    <div class="minusmenu" v-if="nomenu" @click="deletemenu"><feather-icon type="x"></feather-icon></div>
+  </div>
+  <div class="me">
+    <div class="hiatus">
+      <div class="paragrafi">
+        <div class="shkrimet">
+          <span>HELLO</span>
+          <span>I'm Aurora Selimi</span>
+          <span>Web Designer and Developer</span>
+        </div>
+        <div>
+          <button>
+            <h3>ABOUT ME</h3>
+            <span><feather-icon type="arrow-right"></feather-icon></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="options">
+    <div>SHOW ALL</div>
+    <div>PHOTOGRAPHY</div>
+    <div>ILLUSTRATION</div>
+    <div>BRANDING</div>
+    <div>WEB DESIGN</div>
+  </div>
+  <div class="rresht">
+    <postimet v-for="post in postimet" :nikolon="post"></postimet>
+  </div>
+  <div class="endi">
+    <div class="h1">
+      <h1>Services</h1>
+      <div></div>
+    </div>
+    <p style="max-width: 600px; text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+    <div class="rreshti1">
+      <div class="divat">
+        <feather-icon type="monitor"></feather-icon>
+        <div>
+          <h4>DESIGN</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+        </div>
+      </div>
+      <div class="divat">
+        <feather-icon type="instagram"></feather-icon>
+        <div>
+          <h4>PHOTOGRAPHY</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+        </div>
+      </div>
+      <div class="divat">
+        <feather-icon type="briefcase"></feather-icon>
+        <div>
+          <h4>MARKETING</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+        </div>
+      </div>
+    </div>
+    <div class="rreshti2">
+      <div class="divat">
+        <feather-icon type="edit"></feather-icon>
+        <div>
+          <h4>DEVELOPMENT</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+        </div>
+      </div>
+      <div class="divat">
+        <feather-icon type="settings"></feather-icon>
+        <div>
+          <h4>SUPPORT</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+        </div>
+      </div>
+      <div class="divat">
+        <feather-icon type="zap"></feather-icon>
+        <div>
+          <h4>BRANDING</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fundi">
+    <div class="uno">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+    </div>
+    <div class="dos">
+      <div>
+        <h2 >WIMO</h2></div>
+      <div class="container">
+        <div>
+          <span>HOME</span>
+          <span>PORTFOLIO</span>
+          <span>SERVICES</span>
+          <span>CONTACT</span>
+        </div>
+        <div class="blank"></div>
+      </div>
+      <div style="margin-top: 20px;">© Wimo 2017. All Rights Reserved.</div>
+    </div>
+    <div class="tres">
+      <span>PHONE : +000 111 123</span>
+      <span>EMAIL : Wimo@Axix.Com</span>
+      <span>ADDRESS : Wimo House,New Road CA</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+#postimi {
+  padding: 10px;
+  padding-bottom: 30px;
+  .fotoja {
+    position: relative;
+    cursor: pointer;
+    overflow:hidden;
+    &.big {
+      max-height:350px;
+    }
+    max-height: 200px;
+    .imazhi {
+      max-width: 250px;
+    }
+    .blloku {
+      position: absolute;
+      bottom: -5px;
+      left: 30px;
+      transform: rotate(45deg);
+      background-color: white;
+      height: 15px;
+      width: 15px;
+    }
+    &:hover {
+      transform: scale(.9);
+    }
+  }
+  h4 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left:10px;
+  }
+  p {
+    margin: 0 10px;
+    color: rgba(black, .5);
+  }
+}

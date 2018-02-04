@@ -1,0 +1,326 @@
+body {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  .topbar {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    background-color: white;
+    width: 100%;
+    z-index: 30;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    .anashleft {
+      font-family: 'Dancing Script', cursive;
+      font-size: 30px;
+      width: 450px;
+    }
+    .anashright {
+      display: flex;
+      .notletdown {
+        font-size: 11px;
+        letter-spacing: .5px;
+        color: rgba(black, .8);
+        font-family: 'Montserrat', sans-serif;
+        margin: 0 10px;
+      }
+      .letdown {
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        letter-spacing: .5px;
+        color: rgba(black, .8);
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 10px;
+        svg {
+          height: 10px;
+          margin-left: -5px;
+        }
+      }
+    }
+    .anashrighthidden {
+      display: fixed;
+    }
+  }
+  .me {
+    display: flex;
+    background-image: url(http://www.imagenswhatsapp.blog.br/wp-content/uploads/2017/06/Papel-De-Parede-Tumblr-2.jpg);
+    min-height: 600px;
+    button {
+      margin: auto;
+      padding: 0 15px;
+      width: max-content;
+      background-color: rgba(black, .8);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 11px;
+      cursor: pointer;
+      svg {
+        stroke: white;
+        height: 20px;
+        width: 15px;
+        margin-top: 2px;
+      }
+    }
+    .hiatus {
+      display: flex;
+      margin: auto;
+      border: solid 1px white;
+      padding: 10px;
+    }
+    .paragrafi {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: auto;
+      text-align: center;
+      background-color: rgba(white, .9);
+      padding: 30px 50px;
+      color: rgba(black, .7);
+      .shkrimet {
+        font-size: 25px;
+        font-weight: 100;
+        margin-bottom: auto;
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        font-weight: 500;
+        span {
+          margin: 5px;
+        }
+         :first-child {
+          font-weight: bold;
+          font-size: 45px;
+          letter-spacing: -1px;
+        }
+         :last-child {
+          font-size: 30px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  .options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 100px;
+    margin: auto;
+    div {
+      font-size: 13px;
+      letter-spacing: .5px;
+      color: rgba(gray, .6);
+      font-family: 'Montserrat', sans-serif;
+      border: solid 1.5px rgba(gray, .5);
+      padding: 10px;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0px;
+      }
+      &:hover {
+        border-color: black;
+        color: black;
+      }
+    }
+  }
+  .rresht {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 100px;
+  }
+  .endi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 60px;
+    background-color: rgba(gray, .1);
+    color: rgba(black, .8);
+    .h1 {
+      position: relative;
+      h1 {
+        margin: 15px;
+      }
+      div {
+        position: absolute;
+        bottom: 0;
+        left: 45px;
+        border: solid 1.5px rgba(black, .8);
+        width: 70px;
+      }
+    }
+    .rreshti1,
+    .rreshti2 {
+      display: flex;
+      justify-content: space-around;
+      color: rgba(black, .7);
+      .divat {
+        border: solid 1px rgba(gray, .5);
+        height: 150px;
+        width: 350px;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        &:hover {
+          border: solid 2px white;
+        }
+        svg {
+          stroke: rgba(black, .8);
+          stroke-width: 1;
+          height: 40px;
+          width: 90px;
+          padding: 10px;
+          border-color: solid 1px white;
+          background-color: white;
+        }
+        div {
+          margin: 20px;
+          h4 {
+            margin: 0;
+          }
+        }
+        p {
+          line-height: 1.5;
+          margin: 0;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .fundi {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding: 100px 0;
+    color: rgba(black, .8);
+    line-height: 30px;
+    flex-wrap: wrap;
+    .dos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 500px;
+      .container {
+        position: relative;
+        div {
+          height: 50px;
+        }
+        .blank {
+          position: absolute;
+          bottom: 0;
+          left: 70px;
+          border-bottom: solid 1px rgba(black, .8);
+          width: 160px;
+        }
+      }
+      span {
+        margin: 5px;
+      }
+    }
+    .uno,
+    .tres {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      max-width: 300px;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (min-width:600px) {
+  .minusmenu,
+  .hamburgermenu {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .anashright {
+    display: none;
+    &.menujaaktive {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      align-items: center;
+      justify-content: center;
+
+      >span {
+        font-size: 2.5rem !important;
+        margin: 15px 0px !important;
+      }
+    }
+  }
+  .minusmenu {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+  .topbar {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+  }
+  .options {
+    padding: 10px 0px!important;
+    margin-top: 20px!important;
+    height: unset!important;
+    flex-direction: column;
+    >div {
+      width: 100%;
+      margin-bottom: 10px;
+      margin-right: 0px!important;
+    }
+  }
+  .rreshti1,
+  .rreshti2,
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .fundi>div {
+    margin: 10px 0px;
+    padding: 20px 0px;
+    &:nth-child(2) {
+      border: dashed 1px whitesmoke;
+      border-left: none;
+      border-right: none;
+    }
+    &.uno {
+      order: 2;
+    }
+    &.dos {
+      order: 1;
+    }
+    &.tres {
+      order: 3;
+    }
+  }
+}
