@@ -260,7 +260,7 @@ body {
 
 @media (max-width: 600px) {
   .anashright {
-    display: none;
+    display: none!important;
     &.menujaaktive {
       display: flex;
       flex-direction: column;
