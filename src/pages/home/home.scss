@@ -144,6 +144,7 @@ body {
   }
   .rresht {
     display: flex;
+    flex-wrap: wrap;
     width: 80%;
     justify-content: space-between;
     margin: auto;
@@ -259,10 +260,13 @@ body {
 }
 
 @media (max-width: 600px) {
+  .letdown span {
+    display: flex!important;
+  }
   .anashright {
     display: none!important;
     &.menujaaktive {
-      display: flex;
+      display: flex!important;
       flex-direction: column;
       position: fixed;
       left: 0;
