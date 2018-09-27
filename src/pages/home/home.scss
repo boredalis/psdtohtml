@@ -186,6 +186,7 @@ body {
           border: solid 2px white;
         }
         svg {
+         
           stroke: rgba(black, .8);
           stroke-width: 1;
           height: 40px;
@@ -193,6 +194,15 @@ body {
           padding: 10px;
           border-color: solid 1px white;
           background-color: white;
+          circle{
+            stroke:rgba(black,0.8);
+            stroke-width: 1;
+          }
+          path{
+            stroke: rgba(black, 0.8);
+            stroke-width: 1;
+          }
+          
         }
         div {
           margin: 20px;
