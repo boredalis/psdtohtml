@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/vueture/vueture#readme",
   "dependencies": {
-    "axios": "^0.16.1",
+    "axios": "^0.21.1",
     "feathericon": "^0.9.5",
     "normalize.css": "^6.0.0",
     "vue": "^2.2.6",
